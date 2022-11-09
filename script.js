@@ -15,7 +15,7 @@ clickableSection.addEventListener("click", () => {
     count += multiplier; // Adds the count with the multiplier
     localStorage.setItem("count", JSON.stringify(count)); 
     number.textContent = count; // Update the count
-    const audio = new Audio("/Sounds/mixkit-slide-click-1130.wav");
+    const audio = new Audio("./Sounds/mixkit-slide-click-1130.wav");
     if (soundIsOn) {
         audio.play(); // Plays the sound
     }
