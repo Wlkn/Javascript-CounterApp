@@ -1,0 +1,150 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+body {
+    background-color: #252525;
+    overflow: hidden;
+}
+* {
+    user-select: none;
+   -khtml-user-select: none;
+   -o-user-select: none;
+   -moz-user-select: -moz-none;
+   -webkit-user-select: none;
+}
+:root {
+    --height-iphone: 785px;
+    --width-iphone: 537px;
+    --topIphoneToButton: 55px;
+    --width-button: 65px;
+    --height-button: 65px;
+    --darkBlue:#001f4b ; 
+    --darkGray:rgb(71, 71, 71) ;
+    --lighterGray: rgb(101, 101, 101);
+    --gradient-blueLightToDark:linear-gradient(to bottom, #0088bc 0%, #09558a 100%) ;
+    --color-buttons: #0091c4;
+
+
+}
+
+#iphone11 {
+    top: 2em;
+    left: calc(50% - var(--width-iphone) / 2);
+    position: relative;
+}
+#iphone11pic {
+    width: var(--width-iphone);
+    position: absolute;
+}
+#iphone-bg {
+    position: absolute;
+    border-radius: 10%;
+    margin: 15px 0px 0px 60px;
+    height: 820px;
+    width: 400px;
+    background-color: var(--darkBlue);
+    z-index: -1;
+}
+#time {
+    position: absolute;
+    font-family: "SF Pro Display", sans-serif;
+    color: white;
+    font-size: 16px;
+    margin: 30px 0px 0px 106px;
+}
+#number {
+    position: absolute;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 75px;
+    width: var(--width-iphone);
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    z-index: 1;
+}
+#clickable-section {
+    cursor: pointer;
+    position: absolute;
+    margin: 130px 83px;
+}
+#clickable-section:active {
+    opacity: 95%;
+}
+#grad {
+    position: absolute;
+    width: 360px;
+    height: 640px;
+    z-index: 1;
+    background: var(--gradient-blueLightToDark);
+}
+#imgplus {
+    position: absolute;
+    margin: 63px 54px;
+    font-size: 28em;
+    color: white;
+    z-index: 1;
+}
+#resetBtn {
+    cursor: pointer;
+    font-family: "SF Pro Display", sans-serif;
+    position: absolute;
+    margin: var(--topIphoneToButton) 0px 0px 95px;
+    width: var(--width-button);
+    height:var(--height-button);
+    line-height: 55px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: var(--color-buttons);
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+#resetBtn:hover {
+    background: #2c64a4;
+}
+#resetBtn:active {
+    background: #224c7d;
+}
+#multiplierBtn {
+    cursor: pointer;
+    font-family: "SF Pro Display", sans-serif;
+    margin: var(--topIphoneToButton) 0px 0px 365px;
+    position: absolute;
+    width: var(--width-button);
+    height: var(--height-button);
+    line-height: 55px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: var(--color-buttons);
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+#multiplierBtn:hover {
+    background: #2c64a4;
+}
+#multiplierBtn:active {
+    background: #224c7d;
+}
+#sound-toggle {
+    cursor: pointer;
+    font-family: "SF Pro Display", sans-serif;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: white;
+    margin-top: var(--height-iphone);
+    margin-left: 216px;
+    z-index: 1;
+}
+#sound-toggle:hover{
+    color: var(--darkGray);
+}
+#sound-toggle:active {
+    color: var(--lighterGray);
+}
+.gg-volume {
+    margin-left: 5px;
+}
