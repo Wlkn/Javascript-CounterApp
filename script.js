@@ -6,7 +6,6 @@ const clickableSection = document.getElementById("clickable-section");
 const resetBtn = document.getElementById("resetBtn");
 const multiBtn = document.getElementById("multiplierBtn");
 const soundToggle = document.getElementById("sound-toggle");
-
 let soundIsOn = true;
 
 
